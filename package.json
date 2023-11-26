@@ -1,0 +1,35 @@
+{
+  "name": "@rookie007/packaging-tutorial",
+  "version": "1.0.0",
+  "description": "Test package to learn npm deployments.",
+  "main": "dist/index.js",
+  "types": "dist",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "dist",
+    "example": "example"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prepare": "npm run build",
+    "test": "echo Welcome to the package && node example/example.js"
+  },
+  "keywords": [
+    "print-engg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/RRkundkar777/packaging-tutorial"
+  },
+  "author": "Rushikesh Kundkar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/RRkundkar777/packaging-tutorial/-/issues"
+  },
+  "homepage": "https://gitlab.com/RRkundkar777/packaging-tutorial",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
